@@ -1,25 +1,16 @@
 import java.util.*;
-class factorial
+public class factorial
 {
-int i;
-System.out.println("Enter the number");
-Scanner sin=new Scanner(System.in);
-int a=sin.nextInt();
-void cube(int  n)
-{  
-      int n=1;  
-      for(int i=1;i<=n;i++){  
-      n=n*i;  
- }
-void display()
-{
-System.out.println(n);
+	public static void main(String args[])
+	{
+		int n,i,c=1;
+		Scanner input=new Scanner(System.in);
+		System.out.println("Enter the number");
+		n=input.nextInt();
+		for(i=n;i>=1;i--)
+		{
+			c=c*i;
+		}
+		System.out.println("Factorial of entered number is" +c);
+	}
 }
-public static void main(String args[]) 
-{
-factorial obj1=new factorial();
-obj1.cube();
-obj1.display();
-}
-}
- 
